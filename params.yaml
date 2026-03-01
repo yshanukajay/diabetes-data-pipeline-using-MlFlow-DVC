@@ -3,7 +3,7 @@ preprocess:
   output_dir: "data/processed/data.csv"
 
 train:
-  data_dir: "data/processed/data.csv"
+  data_dir: "data/raw/data.csv"
   model_dir: "models/model.pkl"
   random_state: 42
   n_estimators: 100
@@ -11,4 +11,4 @@ train:
 
 evaluate:
   model_dir: "models/model.pkl"
-  data_dir: "data/processed/data.csv"
+  data_dir: "data/raw/data.csv"

@@ -38,6 +38,7 @@ def evaluate_model(model_path: str, data_path: str) -> None:
 
         logging.info(f"Loading model from {model_path}")
         model=pickle.load(open(model_path, "rb"))
+        logging.info("Model loaded successfully")
 
         predictions=model.predict(X)
         accuracy=accuracy_score(y, predictions)
