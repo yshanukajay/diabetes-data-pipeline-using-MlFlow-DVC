@@ -28,7 +28,7 @@ def preprocess_data(input_path: str, output_path: str) -> None:
         raise e
     
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    data.to_csv(output_path, header=None, index=False)
+    data.to_csv(output_path, index=False)
     logger.info(f"Processed data saved to {output_path}")
 
 if __name__ == "__main__":
